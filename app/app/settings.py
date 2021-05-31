@@ -28,7 +28,7 @@ DEBUG = bool(int(os.environ.get('DEBUG', 0)))
 ALLOWED_HOSTS = []
 ALLOWED_HOSTS.extend(
     filter(
-        None,
+        None, 
         os.environ.get('ALLOWED_HOSTS', '').split(',')
     )
 )
